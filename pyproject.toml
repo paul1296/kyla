@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "kyla"
+version = "0.1.0"
+description = "Amazon MCF Integration with Shopify"
+authors = ["Deepak, Paul"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+package-mode = false
