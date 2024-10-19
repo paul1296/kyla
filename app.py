@@ -2,7 +2,7 @@ from fastapi import FastAPI, Request
 from mcf.amazon_sp import AmazonSPAPI
 import os 
 
-access_key = os.getenv("")
+access_key = os.getenv("ACESS_KEY")
 secret_key = os.getenv("SECRET_KEY")
 region = os.getenv("REGION")
 role_arn= os.getenv("ROLE_ARN")
