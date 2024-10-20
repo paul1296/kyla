@@ -18,9 +18,8 @@ def query_executor(sql_query: str):
             results = cursor.fetchall()
             return results
         else:
-            # Commit changes if it's an INSERT, UPDATE, or DELETE statement
-            connection.commit()
-            return "Query executed successfully."
+            raise Exception("Operation not allowed")
+        
     except sqlite3.Error as e:
         print(f"An error occurred: {e}")
 
